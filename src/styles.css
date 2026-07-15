@@ -1,0 +1,25 @@
+:root {
+  --dashboard-bg: #f6f8fb;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--dashboard-bg);
+}
+
+.dashboard-shell {
+  min-height: 100vh;
+  background: var(--dashboard-bg);
+}
+
+.dashboard-content {
+  padding: 32px;
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
